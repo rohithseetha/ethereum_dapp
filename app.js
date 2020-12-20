@@ -6,7 +6,7 @@ const Web3 = require('web3');
 // console.log(Web3);
 
 const web3 = new Web3("https://ropsten.infura.io/v3/37ce477e00c14a8390548738542dd9aa");
-                        wss://ropsten.infura.io/ws/v3/37ce477e00c14a8390548738542dd9aa
+                        // wss://ropsten.infura.io/ws/v3/37ce477e00c14a8390548738542dd9aa
 // console.log(web3);
 const account = "0xfc6448AA384E6ca33e64023C2a0b18f6a69423ad";//metmask account(ethereum Compatible public key;
 var pkey ="a20ab37c47fb882b45231be038e2f57f48a21e133cddaa9db260319658a3b283"//privatekey of your account;
