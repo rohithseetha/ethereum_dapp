@@ -10,7 +10,21 @@
     <h1 id="serverresponse">Hi this is my 1st html</h1>
      <input type="text" name="Name" id="name">
      <button onclick="loadName()">submit</button>
+     <button onclick="getName()">getState</button>
     
+     <script>
+      function getName() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("serverresponse").innerHTML =
+            this.responseText;
+          }
+        };
+        xhttp.open("GET", "get", true);
+        xhttp.send();
+      }
+      </script>
     
     
     <script>
@@ -22,7 +36,7 @@
               this.responseText;
             }
           };
-          xhttp.open("GET", "newroute/"+document.getElementById("name").value, true);
+          xhttp.open("POST", "set/"+document.getElementById("name").value, true);
           xhttp.send();
         }
         </script>
